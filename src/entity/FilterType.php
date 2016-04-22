@@ -9,4 +9,5 @@ class FilterType
     const STRING = "STRING";
     const DATE = "DATE";
     const OBJECT = "OBJECT";
+    const _ARRAY = "ARRAY";
 }
