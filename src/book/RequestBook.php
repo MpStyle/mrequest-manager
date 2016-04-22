@@ -36,33 +36,27 @@ class RequestBook extends MObject
     }
 
     /**
-     * @param string $postRequest
+     * @param array $postRequest
      * @return Request
      * @throws InvalidRequestException
      */
-    public function transform( $postRequest )
+    public function transform( array $postRequest )
     {
         $request = new Request();
-        $requestArray = json_encode( $postRequest );
 
-        if( $requestArray === false )
+        if( isset( $postRequest['pagination'] ) )
         {
-            throw new InvalidRequestException();
+            $request->setPagination( $this->paginationBook->transform( $postRequest['pagination'] ) );
         }
 
-        if( isset( $request['pagination'] ) )
+        if( isset( $postRequest['filters'] ) )
         {
-            $request->setPagination( $this->paginationBook->transform( $request['pagination'] ) );
+            $request->addAllFilters( $this->filterBook->transform( $postRequest['filters'] ) );
         }
 
-        if( isset( $request['filters'] ) )
+        if( isset( $postRequest['orderClauses'] ) )
         {
-            $request->addAllFilters( $this->filterBook->transform( $request['filters'] ) );
-        }
-
-        if( isset( $request['orderClauses'] ) )
-        {
-            $request->addAllOrderClauses( $this->orderClauseBook->transform( $request['orderClauses'] ) );
+            $request->addAllOrderClauses( $this->orderClauseBook->transform( $postRequest['orderClauses'] ) );
         }
 
         return $request;
