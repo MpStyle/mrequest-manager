@@ -7,17 +7,17 @@ class Request
     /**
      * @var Filter[]
      */
-    private $filters=array();
+    private $filters = array();
 
     /**
      * @var Pagination
      */
-    private $pagination=null;
+    private $pagination = null;
 
     /**
      * @var OrderClause[]
      */
-    private $orderClauses=array();
+    private $orderClauses = array();
 
     /**
      * @return Filter[]
@@ -44,7 +44,7 @@ class Request
      */
     public function addAllFilters( array $filters )
     {
-        $this->filters = array_merge($filters, $this->filters);
+        $this->filters = array_merge( $filters, $this->filters );
 
         return $this;
     }
@@ -93,7 +93,7 @@ class Request
      */
     public function addAllOrderClauses( array $orderClauses )
     {
-        $this->orderClauses = array_merge($orderClauses, $this->orderClauses);
+        $this->orderClauses = array_merge( $orderClauses, $this->orderClauses );
 
         return $this;
     }

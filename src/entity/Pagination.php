@@ -30,7 +30,7 @@ class Pagination
      */
     public function setPage( $page )
     {
-        MDataType::mustBe(MDataType::INT);
+        MDataType::mustBe( MDataType::INT );
         $this->page = $page;
 
         return $this;
@@ -50,7 +50,7 @@ class Pagination
      */
     public function setPageSize( $pageSize )
     {
-        MDataType::mustBe(MDataType::INT);
+        MDataType::mustBe( MDataType::INT );
         $this->pageSize = $pageSize;
 
         return $this;
