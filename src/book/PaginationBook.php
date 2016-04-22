@@ -1,8 +1,8 @@
 <?php
 
-namespace mpstyle\request\book;
+namespace mpstyle\mrequestmanager\book;
 
-use mpstyle\request\entity\Pagination;
+use mpstyle\mrequestmanager\entity\Pagination;
 
 class PaginationBook
 {

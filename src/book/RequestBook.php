@@ -1,9 +1,9 @@
 <?php
 
-namespace mpstyle\request\book;
+namespace mpstyle\mrequestmanager\book;
 
-use mpstyle\request\entity\Request;
-use mpstyle\request\exception\InvalidRequestException;
+use mpstyle\mrequestmanager\entity\Request;
+use mpstyle\mrequestmanager\exception\InvalidRequestException;
 use mtoolkit\core\MObject;
 
 class RequestBook extends MObject

@@ -1,6 +1,6 @@
 <?php
 
-namespace mpstyle\request\entity;
+namespace mpstyle\mrequestmanager\entity;
 
 class OrderDirection
 {

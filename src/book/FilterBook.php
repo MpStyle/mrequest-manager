@@ -1,8 +1,8 @@
 <?php
-namespace mpstyle\request\book;
+namespace mpstyle\mrequestmanager\book;
 
-use mpstyle\request\entity\Filter;
-use mpstyle\request\entity\FilterType;
+use mpstyle\mrequestmanager\entity\Filter;
+use mpstyle\mrequestmanager\entity\FilterType;
 
 class FilterBook
 {

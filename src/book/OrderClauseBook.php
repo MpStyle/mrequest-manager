@@ -1,8 +1,8 @@
 <?php
 
-namespace mpstyle\request\book;
+namespace mpstyle\mrequestmanager\book;
 
-use mpstyle\request\entity\OrderClause;
+use mpstyle\mrequestmanager\entity\OrderClause;
 
 class OrderClauseBook
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace mpstyle\request\exception;
+namespace mpstyle\mrequestmanager\exception;
 
 class InvalidRequestException extends \Exception
 {

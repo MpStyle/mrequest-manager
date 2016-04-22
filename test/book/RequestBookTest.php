@@ -1,9 +1,9 @@
 <?php
 
-namespace mpstyle\request\test\book;
+namespace mpstyle\mrequestmanager\test\book;
 
-use mpstyle\request\book\RequestBook;
-use mpstyle\request\entity\FilterType;
+use mpstyle\mrequestmanager\book\RequestBook;
+use mpstyle\mrequestmanager\entity\FilterType;
 
 class RequestBookTest extends \PHPUnit_Framework_TestCase
 {
