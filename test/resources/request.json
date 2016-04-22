@@ -1,0 +1,28 @@
+{
+  "pagination":{
+    "page": 1,
+    "pageSize": 20
+  },
+  "filters":[
+    {
+      "name": "name1",
+      "type": "type1",
+      "value": "value1"
+    },
+    {
+      "name": "name2",
+      "type": "type2",
+      "value": 1
+    },
+    {
+      "name": "name4",
+      "value": false
+    }
+  ],
+  "orderClauses":[
+    {
+      "fieldName": "fieldName1",
+      "orderDirection": "orderDirection1"
+    }
+  ]
+}
