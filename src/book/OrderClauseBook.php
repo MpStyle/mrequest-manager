@@ -19,7 +19,7 @@ class OrderClauseBook
         {
             $orderClause = new OrderClause();
 
-            if( isset( $orderClauseArray["name"] ) && isset( $orderClauseArray["value"] ) )
+            if( isset( $orderClauseArray["fieldName"] ) && isset( $orderClauseArray["orderDirection"] ) )
             {
                 $orderClause->setFieldName( $orderClauseArray["fieldName"] );
                 $orderClause->setOrderDirection( $orderClauseArray["orderDirection"] );
